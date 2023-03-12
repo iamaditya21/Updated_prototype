@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(
+    rgba(178, 170, 170, 0.6),
+    rgb(133, 125, 125)
+  );
+  min-height: 800px;
+  overflow: hidden;
+}
+
+.box {
+  
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  position: relative;
+  height: 85vh;
+  width: 70vw;
+  background-color: rgba(186, 186, 196, 0.877);
+  min-height: 937px;
+}
+.box img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+}
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* text-align: center; */
+  left: 40%;
+  /*height:43%;*/
+  position: absolute;
+  margin-top: 9%;
+  width: 100%;
+
+  /* background-color: rgb(157, 165, 165); */
+}
+.title h1 {
+  font-weight: 650;
+  font-size: 2.7rem;
+}
+.content {
+  top: 27%;
+  padding-left: 50px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  flex-direction: column;
+  position: absolute;
+  align-self: center;
+  color: rgb(4, 2, 95);
+}
+.input {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  /* box-shadow: 5px 5px 15px #041956ad; */
+  border-bottom: thin solid white;
+  /* border-radius: 10px; */
+  border-radius: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  /* max-width: 500px; */
+  position: absolute;
+  align-content: space-between;
+  height: 35px;
+  left: 9%;
+  color: whitesmoke;
+}
+.input:focus {
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  border-bottom: 3px solid #4385b1;
+}
+i.fa {
+  /* color: white; */
+  /* top: 30%; */
+  transform: translateY(-85%);
+  left: 6%;
+  position: absolute;
+}
+.element {
+  padding-bottom: 20px;
+  color: white;
+}
+/* .content label {
+  margin-top: 10px;
+  font-size: large;
+  font-weight: bolder;
+} */
+/* .flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+}
+.col1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+}
+.col2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  left: 25%;
+  position: absolute;
+}
+.col3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  left: 50%;
+  position: absolute;
+} */
+.btn-light {
+  background-color: transparent;
+  border-color: #050562b8;
+}
+/*.bootstrap-select > .dropdown-toggle.bs-placeholder {*/
+/*   color: whitesmoke;*/
+/*}*/
+.bootstrap-select .dropdown-toggle .filter-option,
+.bootstrap-select > .dropdown-toggle.bs-placeholder,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+  color: #e5d8d8;
+}
+.dropdown-menu {
+  background-color: #596178;
+}
+.bs-searchbox {
+  display: none;
+}
+.button {
+  box-shadow: 5px 5px 15px #041956ad;
+  display: block;
+  position: absolute;
+  left: 10%;
+  top: 115%;
+}
+.button button {
+  padding: 5px 10px;
+}
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 50vw;
+  }
+  .title {
+    left: 30%;
+  }
+  .input {
+    left: 10%;
+  }
+  /* .col2 {
+    left: 20%;
+  }
+  .col3 {
+    left: 40%;
+  } */
+  /* .button {
+    top: 120%;
+  } */
+}
+@media screen and (max-width: 900px) {
+  .box {
+    width: 60vw;
+  }
+  /* .col2 {
+    left: 25%;
+  }
+  .col3 {
+    left: 50%;
+  } */
+}
+@media screen and (max-width: 700px) {
+  .title {
+    left: 0;
+    justify-content: center;
+  }
+  .title h1 {
+    font-weight: 650;
+    font-size: 2.5rem;
+  }
+  .box {
+    width: 100vw;
+    height: 100vh;
+  }
+  .input {
+    width: 75%;
+  }
+  i.fa {
+    left: 4.5%;
+  }
+  /* .col2 {
+    left: 0;
+    top: 100%;
+  }
+  .col3 {
+    left: 0;
+    top: 190%;
+  } */
+  /* .flexbox {
+    flex-direction: column;
+  }
+  .col1,
+  .col2,
+  .col3 {
+    position: static;
+    flex-direction: row;
+  }
+  .col1 .r2 {
+    position: relative;
+    left: calc(30% - 58.5px);
+  }
+  .col2 .r2 {
+    position: relative;
+    left: calc(30% - 95.5px);
+  }
+  .col3 .r2 {
+    position: relative;
+    left: calc(30% - 71.5px);
+  } */
+  .button {
+    left: 40%;
+  }
+}
